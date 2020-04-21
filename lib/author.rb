@@ -1,32 +1,9 @@
 class Author
-#   attr_accessor :name
+  attr_accessor :name
 
-#   @@post_count = 0
+  @@post_count = 0
 
-#   def initialize(name)
-#     @name = name
-#     @post = []
-#   end
-
-#   def add_song(song)
-#     self.post << song
-#     song.artist = self
-#     @@song_count +=1
-#   end
-
-#   def add_song_by_name(name)
-#     song = Song.new(name)
-#     self.songs << song
-#     song.artist = self
-#     @@song_count +=1
-#   end
-
-#   def songs
-#     @songs 
-#   end
-
-#   def self.song_count
-#     @@song_count
-#   end
-# end
-end 
+  def initialize(name)
+    @name = name
+    @post = []
+  end
