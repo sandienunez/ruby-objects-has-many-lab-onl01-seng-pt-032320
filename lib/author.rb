@@ -10,7 +10,6 @@ class Author
   
 def posts
     Post.all.select {|post| post.author == self}
-  end
 end
     
 def add_post(post)
@@ -22,9 +21,10 @@ def add_post(post)
   def add_post_by_title(title)
     post = Post.new(title)
     self.posts << post
-    song.post = self
+    post.author = self
     @@post_count +=1
   end
+  
   
   def self.post_count
   Post.all.length
