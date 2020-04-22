@@ -7,3 +7,4 @@ class Author
     @name = name
     @post = []
   end
+end 
