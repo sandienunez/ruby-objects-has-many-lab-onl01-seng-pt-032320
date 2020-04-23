@@ -5,9 +5,10 @@ class Post
   @@all = [] 
   
   def initialize(name)
-    @name = name
+    @title = title #shouldn't the variable be called @title?
   @@all << self 
   end
+  
 
 
  def self.all 
